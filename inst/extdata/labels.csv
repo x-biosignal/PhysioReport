@@ -1,0 +1,50 @@
+key,en,ja
+bias,Bias,バイアス
+lower_loa,Lower LoA,下方一致限界
+upper_loa,Upper LoA,上方一致限界
+mean,Mean,平均
+difference,Difference,差
+time,Time,時間
+amplitude,Amplitude,振幅
+gait_speed,Gait speed,歩行速度
+cadence,Cadence,ケイデンス
+stride_length,Stride length,ストライド長
+step_length,Step length,歩長
+stance_phase,Stance phase,立脚期
+swing_phase,Swing phase,遊脚期
+double_support,Double support,両脚支持期
+symmetry_index,Symmetry index,対称性指数
+gait_cycle,Gait cycle,歩行周期
+sdnn,SDNN,SDNN
+rmssd,RMSSD,RMSSD
+pnn50,pNN50,pNN50
+lf_power,LF power,LFパワー
+hf_power,HF power,HFパワー
+lf_hf_ratio,LF/HF ratio,LF/HF比
+mean_hr,Mean HR,平均心拍数
+mean_rr,Mean RR,平均RR間隔
+rms_amplitude,RMS amplitude,RMS振幅
+mean_frequency,Mean frequency,平均周波数
+median_frequency,Median frequency,中央周波数
+mvc_percent,% MVC,%MVC
+onset,Onset,発現
+co_contraction,Co-contraction,共収縮
+muscle,Muscle,筋
+normative_band,Normative band,規範帯
+z_score,Z-score,Zスコア
+percentile,Percentile,パーセンタイル
+session,Session,セッション
+baseline,Baseline,ベースライン
+follow_up,Follow-up,追跡
+change,Change,変化量
+left,Left,左
+right,Right,右
+value,Value,値
+observed,Observed,実測値
+gait_report,Gait report,歩行レポート
+hrv_report,HRV report,心拍変動レポート
+emg_report,EMG report,筋電図レポート
+subject,Subject,被験者
+generated,Generated,作成日
+provenance,Provenance,来歴
+percent_reference,% of reference,基準比 %

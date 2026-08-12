@@ -1,0 +1,71 @@
+# PhysioReport
+
+Clinical report generation for the
+[x-biosignal](https://github.com/x-biosignal) ecosystem: parameterized,
+bilingual (JA/EN), colorblind-safe reports (gait, HRV, EMG) with
+normative overlays and MDC/MCID-annotated change.
+
+## Installation
+
+``` r
+
+install.packages("PhysioReport",
+  repos = c("https://x-biosignal.r-universe.dev", "https://cloud.r-project.org"))
+```
+
+Part of the x-biosignal rehabilitation-standard implementation plan.
+
+## Governance & support
+
+Part of the [Physio ecosystem](https://x-biosignal.r-universe.dev).
+Community and policy documents live in the umbrella repository:
+
+- [Code of
+  Conduct](https://github.com/x-biosignal/PhysioExperiment/blob/main/CODE_OF_CONDUCT.md)
+- [Contributing](https://github.com/x-biosignal/PhysioExperiment/blob/main/CONTRIBUTING.md)
+- [Governance](https://github.com/x-biosignal/PhysioExperiment/blob/main/GOVERNANCE.md)
+- [Support](https://github.com/x-biosignal/PhysioExperiment/blob/main/SUPPORT.md)
+- [Security
+  policy](https://github.com/x-biosignal/PhysioExperiment/blob/main/SECURITY.md)
+- [Deprecation & lifecycle
+  policy](https://github.com/x-biosignal/PhysioExperiment/blob/main/DEPRECATION.md)
+
+# Package index
+
+## All functions
+
+- [`NormativeModel()`](https://x-biosignal.github.io/PhysioReport/reference/NormativeModel.md)
+  : Normative reference model (mean / SD corridor)
+- [`annotateChange()`](https://x-biosignal.github.io/PhysioReport/reference/annotateChange.md)
+  : Classify pre-to-post change against MDC and MCID thresholds
+- [`as.timelineData()`](https://x-biosignal.github.io/PhysioReport/reference/as.timelineData.md)
+  : Adapt a longitudinal tracker to timeline data
+- [`buildDocxReport()`](https://x-biosignal.github.io/PhysioReport/reference/buildDocxReport.md)
+  : Build an editable DOCX clinical report (officer)
+- [`clinicalGaitReport()`](https://x-biosignal.github.io/PhysioReport/reference/clinicalGaitReport.md)
+  : Clinical gait report dashboard
+- [`gaitIndexDashboard()`](https://x-biosignal.github.io/PhysioReport/reference/gaitIndexDashboard.md)
+  : Gait index dashboard panel (GDI / GPS / MAP)
+- [`longitudinalTimeline()`](https://x-biosignal.github.io/PhysioReport/reference/longitudinalTimeline.md)
+  : Longitudinal patient timeline (swimlane)
+- [`normativeZScore()`](https://x-biosignal.github.io/PhysioReport/reference/normativeZScore.md)
+  : Normative z-score of an observation
+- [`physioLabel()`](https://x-biosignal.github.io/PhysioReport/reference/physioLabel.md)
+  : Bilingual (Japanese / English) label lookup for reports
+- [`plotBlandAltman()`](https://x-biosignal.github.io/PhysioReport/reference/plotBlandAltman.md)
+  : Bland-Altman agreement plot
+- [`plotChangeAnnotated()`](https://x-biosignal.github.io/PhysioReport/reference/plotChangeAnnotated.md)
+  : Forest-style plot of annotated pre-to-post changes
+- [`plotNormativeBand()`](https://x-biosignal.github.io/PhysioReport/reference/plotNormativeBand.md)
+  : Plot an observation against a normative band
+- [`plotOutcomeRadar()`](https://x-biosignal.github.io/PhysioReport/reference/plotOutcomeRadar.md)
+  : Multi-domain outcome radar (spider) plot
+- [`plotSCED()`](https://x-biosignal.github.io/PhysioReport/reference/plotSCED.md)
+  : Single-case (SCED) plot with phase overlays
+- [`renderClinicalReport()`](https://x-biosignal.github.io/PhysioReport/reference/renderClinicalReport.md)
+  : Render a parameterized clinical report (PDF / DOCX / HTML)
+- [`reportTheme()`](https://x-biosignal.github.io/PhysioReport/reference/reportTheme.md)
+  : The x-biosignal report theme
+- [`scedStats()`](https://x-biosignal.github.io/PhysioReport/reference/scedStats.md)
+  : Single-case (SCED) effect-size summary
+

@@ -22,7 +22,7 @@ plotOutcomeRadar(
   Domain scores: a named numeric vector (one timepoint), a matrix or
   data.frame with domains as columns and timepoints as rows, or a
   `MSKFunctionalOutcome` (from
-  [`PhysioMSKNet::mskPredictFunctionalOutcome()`](https://x-biosignal.r-universe.dev/PhysioMSKNet/reference/mskPredictFunctionalOutcome.html)),
+  [`PhysioMSKNet::mskPredictFunctionalOutcome()`](https://x-biosignal.github.io/PhysioMSKNet/reference/mskPredictFunctionalOutcome.html)),
   whose aggregate ROM / strength / function become the domains.
 
 - reference:

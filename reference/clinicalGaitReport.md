@@ -32,7 +32,7 @@ clinicalGaitReport(
 - norm:
 
   A `gait_norm`-like list (e.g. from
-  [`PhysioGaitNorm::loadGaitNorm()`](https://x-biosignal.r-universe.dev/PhysioGaitNorm/reference/loadGaitNorm.html))
+  [`PhysioGaitNorm::loadGaitNorm()`](https://x-biosignal.github.io/PhysioGaitNorm//reference/loadGaitNorm.html))
   with `$variables`, row-named `$mean` and `$sd` matrices (variables x
   cycle points), and optionally `$percent` and `$features` (for the
   GDI).

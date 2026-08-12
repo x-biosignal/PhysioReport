@@ -42,7 +42,7 @@ Parker RI, Vannest KJ (2011). Tau-U. Behavior Therapy; Scruggs et al.
 ## See also
 
 [`plotSCED()`](https://x-biosignal.github.io/PhysioReport/reference/plotSCED.md),
-[`PhysioClinStats::scedTauU()`](https://rdrr.io/pkg/PhysioClinStats/man/scedTauU.html)
+[`PhysioClinStats::scedTauU()`](https://x-biosignal.github.io/PhysioClinStats/reference/scedTauU.html)
 
 ## Examples
 

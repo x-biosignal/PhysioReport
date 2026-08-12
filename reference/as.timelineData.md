@@ -21,7 +21,7 @@ as.timelineData(x, ...)
 - x:
 
   A tracker object (e.g. a `MSKLongitudinalTracker` from
-  [`PhysioMSKNet::mskLongitudinalTracker()`](https://x-biosignal.r-universe.dev/PhysioMSKNet/reference/mskLongitudinalTracker.html)).
+  [`PhysioMSKNet::mskLongitudinalTracker()`](https://x-biosignal.github.io/PhysioMSKNet/reference/mskLongitudinalTracker.html)).
 
 - ...:
 

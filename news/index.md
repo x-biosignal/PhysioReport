@@ -31,7 +31,7 @@ with normative overlays and MDC/MCID-annotated change.
   draws a Bland-Altman plot (mean vs. difference of paired measurements)
   with bias and limit-of-agreement reference lines. Statistics are
   computed by
-  [`PhysioCore::blandAltman()`](https://x-biosignal.r-universe.dev/PhysioCore/reference/blandAltman.html),
+  [`PhysioCore::blandAltman()`](https://x-biosignal.github.io/PhysioCore//reference/blandAltman.html),
   so the plotted lines exactly match the returned bias and limits of
   agreement, and labels/axes are localized through
   [`physioLabel()`](https://x-biosignal.github.io/PhysioReport/reference/physioLabel.md).
@@ -41,5 +41,5 @@ with normative overlays and MDC/MCID-annotated change.
 - Consistent, accessible report styling via
   [`reportTheme()`](https://x-biosignal.github.io/PhysioReport/reference/reportTheme.md),
   a thin wrapper around the shared colorblind-safe
-  [`PhysioCore::theme_physio()`](https://x-biosignal.r-universe.dev/PhysioCore/reference/theme_physio.html)
+  [`PhysioCore::theme_physio()`](https://x-biosignal.github.io/PhysioCore//reference/theme_physio.html)
   so every report uses the same ecosystem theme and palette.

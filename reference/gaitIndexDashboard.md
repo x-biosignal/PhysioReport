@@ -18,7 +18,7 @@ gaitIndexDashboard(gdi, gps, map)
 - gdi:
 
   A `gait_deviation_index` (from
-  [`PhysioMoCap::gaitDeviationIndex()`](https://x-biosignal.r-universe.dev/PhysioMoCap/reference/gaitDeviationIndex.html))
+  [`PhysioMoCap::gaitDeviationIndex()`](https://x-biosignal.github.io/PhysioMoCap//reference/gaitDeviationIndex.html))
   or a numeric GDI value. A named numeric vector (e.g.
   `c(L = 82, R = 61)`) reports a per-side GDI.
 
@@ -30,7 +30,7 @@ gaitIndexDashboard(gdi, gps, map)
 - map:
 
   A `movement_analysis_profile` (from
-  [`PhysioMoCap::movementAnalysisProfile()`](https://x-biosignal.r-universe.dev/PhysioMoCap/reference/movementAnalysisProfile.html))
+  [`PhysioMoCap::movementAnalysisProfile()`](https://x-biosignal.github.io/PhysioMoCap//reference/movementAnalysisProfile.html))
   or a named numeric vector of Gait Variable Scores.
 
 ## Value

@@ -27,9 +27,9 @@ annotateChange(pre, post, mdc, mcid, direction = "increase")
 
   Numeric MDC / MCID thresholds (positive), a scalar recycled across
   metrics or a vector matching `pre`. Obtain the MDC from
-  [`PhysioCore::mdc()`](https://x-biosignal.r-universe.dev/PhysioCore/reference/mdc.html)
+  [`PhysioCore::mdc()`](https://x-biosignal.github.io/PhysioCore//reference/mdc.html)
   (or
-  [`PhysioMoCap::mdc()`](https://x-biosignal.r-universe.dev/PhysioCore/reference/mdc.html));
+  [`PhysioMoCap::mdc()`](https://x-biosignal.github.io/PhysioCore//reference/mdc.html));
   the MCID is the instrument's anchor-based value.
 
 - direction:
@@ -56,7 +56,7 @@ underlying MDC.
 ## See also
 
 [`plotChangeAnnotated()`](https://x-biosignal.github.io/PhysioReport/reference/plotChangeAnnotated.md),
-[`PhysioCore::mdc()`](https://x-biosignal.r-universe.dev/PhysioCore/reference/mdc.html)
+[`PhysioCore::mdc()`](https://x-biosignal.github.io/PhysioCore//reference/mdc.html)
 
 ## Examples
 

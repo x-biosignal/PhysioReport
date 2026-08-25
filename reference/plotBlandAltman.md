@@ -3,7 +3,7 @@
 Draws a Bland-Altman plot (mean vs. difference of paired measurements)
 with bias and limit-of-agreement reference lines. The statistics come
 from
-[`PhysioCore::blandAltman()`](https://x-biosignal.r-universe.dev/PhysioCore/reference/blandAltman.html),
+[`PhysioCore::blandAltman()`](https://x-biosignal.github.io/PhysioCore//reference/blandAltman.html),
 so the plotted lines exactly match the computed bias and limits of
 agreement.
 

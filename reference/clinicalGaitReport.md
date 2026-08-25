@@ -61,7 +61,7 @@ A patchwork composite (a `ggplot`-compatible object).
 
 [`gaitIndexDashboard()`](https://x-biosignal.github.io/PhysioReport/reference/gaitIndexDashboard.md),
 [`plotNormativeBand()`](https://x-biosignal.github.io/PhysioReport/reference/plotNormativeBand.md),
-[`PhysioMoCap::plotSymmetry()`](https://x-biosignal.r-universe.dev/PhysioMoCap/reference/plotSymmetry.html)
+[`PhysioMoCap::plotSymmetry()`](https://x-biosignal.github.io/PhysioMoCap//reference/plotSymmetry.html)
 
 ## Examples
 

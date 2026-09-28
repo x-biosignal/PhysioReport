@@ -12,7 +12,7 @@ reportTheme()
 ## Value
 
 A `ggplot2` theme (see
-[`PhysioCore::theme_physio`](https://x-biosignal.github.io/PhysioCore//reference/theme_physio.html)).
+[`PhysioCore::theme_physio`](https://x-biosignal.r-universe.dev/PhysioExperiment/reference/theme_physio.html)).
 
 ## Examples
 

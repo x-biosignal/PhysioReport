@@ -47,7 +47,13 @@ Parker RI, Vannest KJ (2011). Tau-U. Behavior Therapy; Scruggs et al.
 ## Examples
 
 ``` r
-if (FALSE) { # \dontrun{
-scedStats(c(2, 3, 2, 3, 6, 7, 8, 7), rep(c("A", "B"), each = 4))
-} # }
+# scedStats() delegates to PhysioClinStats (a Suggests dependency)
+if (requireNamespace("PhysioClinStats", quietly = TRUE)) {
+  scedStats(c(2, 3, 2, 3, 6, 7, 8, 7), rep(c("A", "B"), each = 4))
+}
+#> <sced_stats>
+#>  metric   estimate
+#>     PND 100.000000
+#>     NAP   1.000000
+#>   Tau-U   0.596962
 ```

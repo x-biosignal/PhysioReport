@@ -3,7 +3,7 @@
 Draws a Bland-Altman plot (mean vs. difference of paired measurements)
 with bias and limit-of-agreement reference lines. The statistics come
 from
-[`PhysioCore::blandAltman()`](https://x-biosignal.r-universe.dev/PhysioExperiment/reference/blandAltman.html),
+[`PhysioExperiment::blandAltman()`](https://x-biosignal.r-universe.dev/PhysioExperiment/reference/blandAltman.html),
 so the plotted lines exactly match the computed bias and limits of
 agreement.
 
@@ -31,8 +31,5 @@ A `ggplot` object.
 ## Examples
 
 ``` r
-# \donttest{
 plotBlandAltman(c(1, 2, 3, 4, 5), c(1.1, 1.9, 3.2, 3.8, 5.1))
-
-# }
 ```

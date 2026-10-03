@@ -44,10 +44,7 @@ A `ggplot` object.
 ## Examples
 
 ``` r
-# \donttest{
 gaitIndexDashboard(gdi = 82,
                    gps = 8.4,
                    map = c(pelvis = 3, hip = 9, knee = 12, ankle = 6))
-
-# }
 ```

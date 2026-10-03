@@ -71,3 +71,9 @@ Community and policy documents live in the umbrella repository:
 - [`scedStats()`](https://x-biosignal.github.io/PhysioReport/reference/scedStats.md)
   : Single-case (SCED) effect-size summary
 
+# Articles
+
+### All vignettes
+
+- [Building blocks of a clinical outcome
+  report](https://x-biosignal.github.io/PhysioReport/articles/clinical-reporting.md):

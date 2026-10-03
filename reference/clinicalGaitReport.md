@@ -66,7 +66,21 @@ A patchwork composite (a `ggplot`-compatible object).
 ## Examples
 
 ``` r
-# \donttest{
-# see the package tests for a synthetic gait fixture
-# }
+# clinicalGaitReport() composes panels with patchwork (a Suggests dependency);
+# indices = FALSE keeps the gait-index panel (and PhysioMoCap) out of the way.
+if (requireNamespace("patchwork", quietly = TRUE)) {
+  np <- 101
+  vars <- c("knee", "hip")
+  ref <- sin(seq(0, pi, length.out = np))
+  norm <- list(
+    variables = vars,
+    mean = matrix(rep(ref, 2), nrow = 2, byrow = TRUE,
+                  dimnames = list(vars, NULL)),
+    sd = matrix(0.1, nrow = 2, ncol = np, dimnames = list(vars, NULL)),
+    percent = seq(0, 100, length.out = np))
+  pe <- list(
+    knee = list(left = ref + 0.05, right = ref - 0.05),
+    hip  = list(left = ref,        right = ref))
+  clinicalGaitReport(pe, norm, indices = FALSE)
+}
 ```

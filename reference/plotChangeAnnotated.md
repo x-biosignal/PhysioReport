@@ -28,11 +28,8 @@ A `ggplot` object.
 ## Examples
 
 ``` r
-# \donttest{
 ch <- annotateChange(c(fma = 20, pain = 7), c(fma = 31, pain = 4),
                      mdc = c(5.2, 1.0), mcid = c(9, 2),
                      direction = c("increase", "decrease"))
 plotChangeAnnotated(ch)
-
-# }
 ```

@@ -46,3 +46,16 @@ buildDocxReport(
 ## See also
 
 [`renderClinicalReport()`](https://x-biosignal.github.io/PhysioReport/reference/renderClinicalReport.md)
+
+## Examples
+
+``` r
+# Writes an editable .docx via officer (a Suggests dependency) into tempdir().
+if (requireNamespace("officer", quietly = TRUE)) {
+  fig <- plotNormativeBand(NULL, NormativeModel(
+    mean = sin(seq(0, pi, length.out = 101)), sd = rep(0.1, 101), time = 0:100))
+  out <- tempfile(fileext = ".docx")
+  buildDocxReport(list(subject = "P01", figures = list(gait_cycle = fig)),
+                  template = "gait", out = out)
+}
+```

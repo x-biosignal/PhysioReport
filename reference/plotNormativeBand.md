@@ -70,11 +70,9 @@ A `ggplot` object.
 ## Examples
 
 ``` r
-# \donttest{
+set.seed(1)
 wf <- NormativeModel(mean = sin(seq(0, pi, length.out = 101)),
                      sd = rep(0.1, 101), time = 0:100)
 obs <- sin(seq(0, pi, length.out = 101)) + rnorm(101, 0, 0.05)
 plotNormativeBand(obs, wf)
-
-# }
 ```

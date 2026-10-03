@@ -64,10 +64,12 @@ The output path, invisibly.
 ## Examples
 
 ``` r
-if (FALSE) { # \dontrun{
-fig <- plotNormativeBand(NULL,
-  NormativeModel(sin(seq(0, pi, length.out = 101)), rep(0.1, 101), time = 0:100))
-renderClinicalReport(list(subject = "P01", figures = list(gait_cycle = fig)),
-                     template = "gait", format = "docx", lang = "ja")
-} # }
+# The LaTeX-free docx path needs only officer (a Suggests dependency); the
+# pdf / html paths additionally need the quarto package and the Quarto CLI.
+if (requireNamespace("officer", quietly = TRUE)) {
+  fig <- plotNormativeBand(NULL,
+    NormativeModel(sin(seq(0, pi, length.out = 101)), rep(0.1, 101), time = 0:100))
+  renderClinicalReport(list(subject = "P01", figures = list(gait_cycle = fig)),
+                       template = "gait", format = "docx", lang = "ja")
+}
 ```

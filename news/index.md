@@ -1,5 +1,17 @@
 # Changelog
 
+## PhysioReport 0.1.2
+
+### Documentation
+
+- A vignette carries one task end to end on synthetic or bundled data,
+  offline, and is built and run by `R CMD check`.
+- Runnable `@examples` added or corrected across 11 help pages. Each
+  runs offline in seconds, writes nothing outside
+  [`tempdir()`](https://rdrr.io/r/base/tempfile.html), and is executed
+  by `R CMD check`; anything needing a device, a download or an optional
+  backend is fenced with the reason stated.
+
 ## PhysioReport 0.1.1
 
 - Fixed DOCX report generation under current `officer`/`rvg`: `rvg`

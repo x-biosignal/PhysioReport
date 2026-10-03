@@ -1,7 +1,7 @@
 # The x-biosignal report theme
 
 Thin wrapper returning the shared colorblind-safe ggplot2 theme from
-PhysioCore, so every report uses consistent, accessible styling.
+PhysioExperiment, so every report uses consistent, accessible styling.
 
 ## Usage
 
@@ -12,13 +12,12 @@ reportTheme()
 ## Value
 
 A `ggplot2` theme (see
-[`PhysioCore::theme_physio`](https://x-biosignal.r-universe.dev/PhysioExperiment/reference/theme_physio.html)).
+[`PhysioExperiment::theme_physio`](https://x-biosignal.r-universe.dev/PhysioExperiment/reference/theme_physio.html)).
 
 ## Examples
 
 ``` r
-# \donttest{
-if (requireNamespace("ggplot2", quietly = TRUE)) reportTheme()
+reportTheme()
 #> <theme> List of 144
 #>  $ line                            : <ggplot2::element_line>
 #>   ..@ colour       : chr "black"
@@ -387,5 +386,4 @@ if (requireNamespace("ggplot2", quietly = TRUE)) reportTheme()
 #>   [list output truncated]
 #>  @ complete: logi TRUE
 #>  @ validate: logi TRUE
-# }
 ```

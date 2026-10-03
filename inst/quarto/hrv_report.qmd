@@ -1,0 +1,57 @@
+---
+params:
+  data_path: ""
+  lang: "en"
+  subject: ""
+format:
+  html:
+    embed-resources: true
+    toc: false
+  pdf:
+    papersize: a4
+  docx: default
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r setup}
+#| include: false
+library(PhysioReport)
+library(ggplot2)
+report_key <- "hrv_report"
+data <- readRDS(params$data_path)
+lang <- params$lang
+```
+
+```{r title}
+#| output: asis
+cat("# ", physioLabel(report_key, lang), "\n\n", sep = "")
+if (nzchar(params$subject)) {
+  cat("**", physioLabel("subject", lang), ":** ", params$subject, "\n\n", sep = "")
+}
+```
+
+```{r figures}
+#| fig-width: 8
+#| fig-height: 4.5
+for (nm in names(data$figures)) print(data$figures[[nm]])
+```
+
+```{r change-table}
+#| output: asis
+if (!is.null(data$change)) {
+  cat("\n\n## ", physioLabel("change", lang), "\n\n", sep = "")
+  df <- as.data.frame(data$change)
+  keep <- intersect(c("metric", "change", "mdc", "mcid", "classification"),
+                    names(df))
+  print(knitr::kable(df[, keep, drop = FALSE], row.names = FALSE))
+}
+```
+
+```{r provenance}
+#| output: asis
+cat("\n\n---\n\n", PhysioReport:::.report_provenance(data$provenance), "\n",
+    sep = "")
+```

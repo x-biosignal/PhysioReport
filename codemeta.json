@@ -1,0 +1,40 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "identifier": "PhysioReport",
+  "name": "PhysioReport: Clinical Report Generation for the x-biosignal Ecosystem",
+  "version": "0.1.0",
+  "description": "Parameterized, bilingual (Japanese/English), colorblind-safe clinical reports (gait, HRV, EMG) with normative overlays and MDC/MCID-annotated change for the x-biosignal physiological signal ecosystem.",
+  "license": "https://spdx.org/licenses/MIT",
+  "codeRepository": "https://github.com/x-biosignal/PhysioReport",
+  "issueTracker": "https://github.com/x-biosignal/PhysioReport/issues",
+  "programmingLanguage": {
+    "@type": "ComputerLanguage",
+    "name": "R"
+  },
+  "runtimePlatform": "R",
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Yusuke",
+      "familyName": "Matsui",
+      "email": "mail.to.matsui@gmail.com"
+    }
+  ],
+  "maintainer": [
+    {
+      "@type": "Person",
+      "givenName": "Yusuke",
+      "familyName": "Matsui",
+      "email": "mail.to.matsui@gmail.com"
+    }
+  ],
+  "developmentStatus": "active",
+  "keywords": [
+    "physiological-signals",
+    "rehabilitation",
+    "biosignal",
+    "biomechanics",
+    "R"
+  ]
+}
